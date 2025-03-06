@@ -1,0 +1,37 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="myReport" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="aa23f63f-f76c-4448-9dec-8429e726b5fb">
+    <property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+    <parameter name="fullName" class="java.lang.String"/>
+    <query language="sql"><![CDATA[]]></query>
+    <background splitType="Stretch"/>
+    <title height="90" splitType="Stretch">
+        <element kind="frame" uuid="9aa0651e-ccee-4220-9e73-932871288525" mode="Opaque" x="-20" y="0" width="594" height="90" backcolor="#4FC95B">
+            <element kind="staticText" uuid="7fdb2643-7ff3-4f4c-b95b-da59c801b88a" mode="Transparent" x="10" y="0" width="569" height="90" forecolor="#FFFFFF" backcolor="#68C47F" fontName="SansSerif" fontSize="19.0" hTextAlign="Left" vTextAlign="Middle">
+                <text><![CDATA[Jatetxeko Estatistikak]]></text>
+            </element>
+            <element kind="textField" uuid="c3be825d-e6ce-4b74-a6dc-1e5e950b4433" x="430" y="30" width="164" height="30" fontSize="14.0">
+                <expression><![CDATA[$P{fullName}]]></expression>
+            </element>
+            <element kind="staticText" uuid="baa3cb74-09fa-4f4b-bdc8-0a7ceff40284" x="340" y="30" width="81" height="30" fontSize="14.0" hTextAlign="Right">
+                <text><![CDATA[Egilea:]]></text>
+            </element>
+        </element>
+    </title>
+    <pageHeader height="29" splitType="Stretch">
+        <element kind="frame" uuid="740c7093-024f-4581-b8d6-ff7a18466888" x="330" y="0" width="244" height="29">
+            <element kind="staticText" uuid="5c32486f-457e-4ab3-afcf-a3bdd77675c1" x="10" y="0" width="110" height="29" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[Noiz sortua:]]></text>
+            </element>
+            <element kind="textField" uuid="4e09d9d4-83db-4078-aedb-c0dfa5ffc5ac" x="120" y="0" width="110" height="29" pattern="MMMMM dd, yyyy" hTextAlign="Center" vTextAlign="Middle">
+                <expression><![CDATA[new java.util.Date()]]></expression>
+            </element>
+        </element>
+    </pageHeader>
+    <columnHeader height="61" splitType="Stretch"/>
+    <detail>
+        <band height="125" splitType="Stretch"/>
+    </detail>
+    <columnFooter height="45" splitType="Stretch"/>
+    <pageFooter height="54" splitType="Stretch"/>
+    <summary height="42" splitType="Stretch"/>
+</jasperReport>
